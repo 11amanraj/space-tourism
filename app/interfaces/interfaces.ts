@@ -1,5 +1,5 @@
 export interface NavbarElement {
-    number: number,
+    index: number,
     title: string,
     link: string
   }
