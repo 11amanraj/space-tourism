@@ -26,12 +26,11 @@ const NavBar = () => {
     }
   ]
 
-  console.log(NavigationElement)
-
   return (
-    <nav className='flex items-center justify-between'>
+    <nav className='flex items-center justify-between pt-10 pl-16'>
       <div>LOGO</div>
-      <div>
+      <div className='block md:hidden'>hamburger</div>
+      <div className='hidden md:flex gap-12 pl-[12.5vw] pr-[5vw] bg-secondary/5 backdrop-blur-2xl'>
         {NavigationElement.map(item => 
           <NavElement title={item.title} index={item.index} link={item.link} key={item.index}/>
           )}
