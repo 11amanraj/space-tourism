@@ -32,9 +32,9 @@ const page = () => {
         <div className='flex flex-col pt-6 md:flex-row'>
             <div className='flex-1 flex flex-col'> 
                 <div className='flex flex-col items-center'>
-                    <h3 className='pt-10 text-preset-4 text-[18px] opacity-50 sm:text-[24px]'>COMMANDER</h3>
-                    <h1 className='pt-2 text-preset-3 text-[24px] sm:text-[40px]'>DOUGLAS HURLEY</h1>
-                    <p className='pt-6 text-center text-preset-9 text-[15px] text-tertiary sm:text-[16px]'>Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2.</p>
+                    <h3 className='pt-10 text-preset-4 text-[18px] opacity-50 sm:text-[24px] md:text-[32px]'>COMMANDER</h3>
+                    <h1 className='pt-2 text-preset-3 text-[24px] sm:text-[40px] md:text-[56px]'>DOUGLAS HURLEY</h1>
+                    <p className='pt-6 text-center text-preset-9 text-[15px] text-tertiary sm:text-[16px] md:text-[18px]'>Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2.</p>
                 </div>
                 <div className='self-center'>Carousel</div>
             </div>
