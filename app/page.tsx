@@ -1,5 +1,3 @@
-import NavBar from "./components/NavBar/NavBar";
-
 export default function Home() {
   return (
     <div className="flex flex-col h-[100dvh] lg:flex-row lg:px-40 lg:pb-32 lg:items-end lg:justify-between">

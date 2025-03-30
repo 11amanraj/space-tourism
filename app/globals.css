@@ -31,14 +31,14 @@
   .text-preset-3 {
     font-family: var(--font-bellefair);
     font-size: 56px;
-    line-height: 64.2%;
+    /* line-height: 64.2%; */
     letter-spacing: 0px;
   }
 
   .text-preset-4 {
     font-family: var(--font-bellefair);
     font-size: 32px;
-    line-height: 36.7%;
+    /* line-height: 36.7%; */
     letter-spacing: 0px;
   }
 
@@ -52,14 +52,14 @@
   .text-preset-6 {
     font-family: var(--font-bellefair);
     font-size: 28px;
-    line-height: 32.1%;
+    /* line-height: 32.1%; */
     letter-spacing: 0px;
   }
 
   .text-preset-7 {
     font-family: var(--font-barlow-condensed);
     font-size: 14px;
-    line-height: 16.8%;
+    /* line-height: 16.8%; */
     letter-spacing: 2px;
   }
 
