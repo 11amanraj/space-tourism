@@ -17,7 +17,7 @@
   .text-preset-1 {
     font-family: var(--font-bellefair);
     font-size: 144px;
-    line-height: 171.9%;
+    /* line-height: 171.9%; */
     letter-spacing: 0px;
   }
 
