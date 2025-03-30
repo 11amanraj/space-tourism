@@ -28,23 +28,23 @@ const page = () => {
         }
     ]
   return (
-    <div className='px-6 outline-1 sm:p-10 sm:bg-blue-700 md:bg-green-500'>
+    <div className='px-6 sm:p-10 md:py-12 md:px-40 h-full sm:bg-blue-700 md:bg-green-500'>
         <div className='text-preset-8 flex gap-6 justify-center sm:text-[20px] sm:justify-start'>
             <p className='opacity-25'>01</p>
             <p>PICK YOUR DESTINATION</p>
         </div>
-        <div className='pt-6 flex flex-col gap-8 lg:flex-row'>
-            <div className='w-52 h-52 sm:w-90 sm:h-90 bg-tertiary self-center'>Image comes here</div>
-            <div className='flex flex-col gap-6 sm:px-32'>
-                <ul className='text-preset-7 self-center flex gap-8 sm:text-[16px]'>
+        <div className='pt-6 h-full flex flex-col gap-8 lg:flex-row'>
+            <div className='w-52 h-52 sm:w-90 sm:h-90 md:flex-1 md:box-border bg-tertiary self-center'>Image comes here</div>
+            <div className='flex flex-col gap-6 sm:px-3 md:flex-1 md:box-border md:px-12 md:justify-center'>
+                <ul className='text-preset-7 self-center flex gap-8 sm:text-[16px] md:self-start'>
                     <li>MOON</li>
                     <li>MARS</li>
                     <li>EUROPA</li>
                     <li>TITAN</li>
                 </ul>
                 <div className='flex flex-col gap-4'>
-                    <h1 className='self-center text-preset-3 sm:text-[100px]'>MOON</h1>
-                    <p className='text-preset-9 text-[15px] text-center text-tertiary sm:text-[18px]'>See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.</p>
+                    <h1 className='self-center text-preset-3 sm:text-[100px] md:self-start'>MOON</h1>
+                    <p className='text-preset-9 text-[15px] text-center text-tertiary sm:text-[18px] md:text-start'>See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.</p>
                 </div>
                 <div className='h-[1px] opacity-25 bg-secondary'></div>
                 <ul className='text-center flex flex-col gap-6 sm:flex-row sm:justify-between'>
