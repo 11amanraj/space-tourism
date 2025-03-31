@@ -24,7 +24,7 @@ const page = () => {
         }   
     ]
   return (
-    <div className='p-6'>
+    <div className="h-full bg-[url('/crew/background-crew-mobile.jpg')] sm:bg-[url('/crew/background-crew-tablet.jpg')] md:bg-[url('/crew/background-crew-desktop.jpg')] bg-cover p-6">
         <div className='text-preset-8 flex gap-6 justify-center sm:text-[20px] sm:justify-start'>
             <p className='opacity-25'>02</p>
             <p>MEET YOUR CREW</p>
