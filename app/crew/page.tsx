@@ -56,6 +56,3 @@ const page = () => {
 }
 
 export default page
-
-{/* <div className="p-6 pt-28 md:pt-46 md:px-41">
-</div> */}
