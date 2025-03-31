@@ -32,8 +32,8 @@ const page = () => {
         }
     ]
   return (
-    <div className="bg-[url('/destination/background-destination-mobile.jpg')] sm:bg-[url('/destination/background-destination-tablet.jpg')] md:bg-[url('/destination/background-destination-desktop.jpg')] bg-cover px-6 sm:p-10 md:py-12 md:px-40 h-full">
-        <div className='pt-28 text-preset-8 flex gap-6 justify-center sm:text-[20px] sm:justify-start'>
+    <>
+        <div className='text-preset-8 flex gap-6 justify-center sm:text-[20px] sm:justify-start'>
             <p className='opacity-25'>01</p>
             <p>PICK YOUR DESTINATION</p>
         </div>
@@ -65,8 +65,11 @@ const page = () => {
                 </ul>
             </div>
         </div>
-    </div>
+    </>
   )
 }
 
 export default page
+
+// Home - flex flex-col h-[100dvh] pt-22 sm:pt-56 lg:flex-row lg:px-40 lg:pb-32 lg:items-end lg:justify-between
+// Destination - px-6 sm:p-10 md:py-12 md:px-40 h-full"

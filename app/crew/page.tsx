@@ -28,12 +28,12 @@ const page = () => {
         }   
     ]
   return (
-    <div className="outline-1 bg-[url('/crew/background-crew-mobile.jpg')] sm:bg-[url('/crew/background-crew-tablet.jpg')] md:bg-[url('/crew/background-crew-desktop.jpg')] bg-cover p-6 pt-28 md:pt-46 md:px-41">
+    <>
         <div className='text-preset-8 flex gap-6 justify-center sm:text-[20px] sm:justify-start'>
             <p className='opacity-25'>02</p>
             <p>MEET YOUR CREW</p>
         </div>
-        <div className='flex flex-1 flex-col pt-6 gap-9 md:flex-row'>
+        <div className='flex flex-1 flex-col gap-9 md:flex-row'>
             <div className='flex-1 flex flex-col gap-18'> 
                 <div className='flex flex-col items-center'>
                     <h3 className='pt-10 text-preset-4 text-[18px] opacity-50 sm:text-[24px] md:text-[32px]'>COMMANDER</h3>
@@ -51,8 +51,11 @@ const page = () => {
                 <img src={crew[0].image} alt={crew[0].name}/>
             </div>
         </div>
-    </div>
+    </>
   )
 }
 
 export default page
+
+{/* <div className="p-6 pt-28 md:pt-46 md:px-41">
+</div> */}
