@@ -1,6 +1,6 @@
 export default function Home() {
   return (
-    <div className="bg-[url('/home/background-home-mobile.jpg')] flex flex-col h-[100dvh] lg:flex-row lg:px-40 lg:pb-32 lg:items-end lg:justify-between">
+    <div className="bg-[url('/home/background-home-mobile.jpg')] bg-cover sm:bg-[url('/home/background-home-tablet.jpg')] md:bg-[url('/home/background-home-desktop.jpg')] flex flex-col h-[100dvh] pt-22 sm:pt-56 lg:flex-row lg:px-40 lg:pb-32 lg:items-end lg:justify-between">
         <div className="flex flex-col items-center p-6 gap-6 md:p-32 md:pb-0 lg:p-0 lg:w-135 lg:items-start">
             <h3 className="text-preset-8 text-tertiary md:text-[28px]">SO, YOU WANT TO TRAVEL TO</h3>
             <h1 className="text-preset-1 text-[80px] md:text-[144px]">SPACE</h1>
@@ -10,13 +10,5 @@ export default function Home() {
             <button className="text-preset-4 text-[18px] text-primary bg-secondary flex items-center justify-center rounded-full w-36 h-36 md:w-68 md:h-68 md:text-[32px]">EXPLORE</button>
         </div>
     </div>
-    // <div>
-    //   <main>
-    //     <div className="flex flex-col h-[100dvh]">
-    //       <NavBar />
-    //       <FirstPage />
-    //     </div>
-    //   </main>
-    // </div>
   );
 }
