@@ -1,6 +1,6 @@
 export default function Home() {
   return (
-    <div className="flex flex-col h-[100dvh] lg:flex-row lg:px-40 lg:pb-32 lg:items-end lg:justify-between">
+    <div className="bg-[url('/home/background-home-mobile.jpg')] flex flex-col h-[100dvh] lg:flex-row lg:px-40 lg:pb-32 lg:items-end lg:justify-between">
         <div className="flex flex-col items-center p-6 gap-6 md:p-32 md:pb-0 lg:p-0 lg:w-135 lg:items-start">
             <h3 className="text-preset-8 text-tertiary md:text-[28px]">SO, YOU WANT TO TRAVEL TO</h3>
             <h1 className="text-preset-1 text-[80px] md:text-[144px]">SPACE</h1>

@@ -27,7 +27,7 @@ const NavBar = () => {
   ]
 
   return (
-    <nav className='flex items-center justify-between pt-10 pl-16'>
+    <nav className='fixed top-0 left-0 w-full flex items-center justify-between pt-10 pl-16'>
       <div>LOGO</div>
       <div className='block md:hidden'>hamburger</div>
       <div className='hidden md:flex gap-12 pl-[12.5vw] pr-[5vw] bg-secondary/5 backdrop-blur-2xl'>
