@@ -38,7 +38,6 @@ const page = () => {
             <p>PICK YOUR DESTINATION</p>
         </div>
         <div className='pt-6 h-full flex flex-col gap-8 lg:flex-row'>
-            {/* <img className='w-52 h-52 sm:w-90 sm:h-90 md:flex-1 md:box-border self-center' src={planetary_bodies[0].image} alt={planetary_bodies[0].name}/> */}
             <div className='w-52 aspect-[1/1] sm:w-90 md:flex-1 md:box-border self-center'>
                 <img className='w-full' src={planetary_bodies[0].image} alt={planetary_bodies[0].name}/>
             </div>
