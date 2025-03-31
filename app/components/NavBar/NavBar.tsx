@@ -28,7 +28,7 @@ const NavBar = () => {
   ]
 
   return (
-    <nav className='fixed top-0 left-0 w-full flex items-center justify-between pt-10 pl-16'>
+    <nav className='absolute top-0 left-0 w-full flex items-center justify-between pt-10 pl-16'>
       <Link href={'/'}>
         <img src="/shared/logo.svg" alt="logo"  className='w-10 h-10 sm:w-12 sm:h-12'/>
       </Link>
