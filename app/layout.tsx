@@ -14,14 +14,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="flex flex-col h-[100dvh]">
+      <body className="flex flex-col h-[100dvh] outline-1">
         <NavBar />
-        {/* <div className="bg-[url('/destination/background-destination-mobile.jpg')] sm:bg-[url('/destination/background-destination-tablet.jpg')] md:bg-[url('/destination/background-destination-desktop.jpg')] bg-cover px-6 sm:p-10 md:py-12 md:px-40 h-full"> */}
-        {/* <div className="bg-[url('/home/background-home-mobile.jpg')] bg-cover sm:bg-[url('/home/background-home-tablet.jpg')] md:bg-[url('/home/background-home-desktop.jpg')] flex flex-col h-[100dvh] pt-22 sm:pt-56 lg:flex-row lg:px-40 lg:pb-32 lg:items-end lg:justify-between"> */}
-        <div className="p-6 pt-28 flex flex-col gap-6 md:flex-row">
+        <div className="outline-1 p-6 pt-28 flex flex-col gap-6 self-center md:pt-46 md:w-277">
           {children}
         </div>
       </body>
     </html>
   );
 }
+
+// md:w-277 md:px-0 md:justify-center

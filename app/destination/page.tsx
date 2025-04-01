@@ -33,6 +33,45 @@ const page = () => {
     ]
   return (
     <>
+        <div className='text-preset-8 flex gap-6 justify-center sm:text-[20px] sm:justify-start md:text-[28px]'>
+            <p className='opacity-25'>01</p>
+            <p>PICK YOUR DESTINATION</p>
+        </div>
+        <div className='pt-6 h-full flex flex-col gap-8 self-center md:flex-row'>
+            <div className='w-52 aspect-[1/1] md:flex-1 self-center md:p-7'>
+                <img className='w-full' src={planetary_bodies[0].image} alt={planetary_bodies[0].name}/>
+            </div>
+            <div className='flex flex-col gap-6 md:flex-1 md:px-12 md:self-center'>
+                <ul className='text-preset-7 self-center flex gap-8 sm:text-[16px] md:self-start'>
+                    <li>MOON</li>
+                    <li>MARS</li>
+                    <li>EUROPA</li>
+                    <li>TITAN</li>
+                </ul>
+                <div className='flex flex-col gap-4'>
+                    <h1 className='self-center text-preset-3 sm:text-[100px] md:self-start'>{planetary_bodies[0].name}</h1>
+                    <p className='text-preset-9 text-[15px] text-center text-tertiary sm:text-[18px] md:text-start'>{planetary_bodies[0].description}</p>
+                </div>
+                <div className='h-[1px] opacity-25 bg-secondary'></div>
+                <ul className='text-center flex flex-col gap-6 sm:flex-row sm:justify-between'>
+                    <li>
+                        <p className='text-tertiary text-preset-7'>AVG. DISTANCE</p>
+                        <p className='text-preset-6'>{planetary_bodies[0].distance.toUpperCase()}</p>
+                    </li>
+                    <li>
+                        <p className='text-tertiary text-preset-7'>EST. TRAVEL TIME</p>
+                        <p className='text-preset-6'>{planetary_bodies[0].travel_time.toUpperCase()}</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </>
+  )
+}
+
+export default page
+
+{/* <>
         <div className='text-preset-8 flex gap-6 justify-center sm:text-[20px] sm:justify-start'>
             <p className='opacity-25'>01</p>
             <p>PICK YOUR DESTINATION</p>
@@ -65,11 +104,4 @@ const page = () => {
                 </ul>
             </div>
         </div>
-    </>
-  )
-}
-
-export default page
-
-// Home - flex flex-col h-[100dvh] pt-22 sm:pt-56 lg:flex-row lg:px-40 lg:pb-32 lg:items-end lg:justify-between
-// Destination - px-6 sm:p-10 md:py-12 md:px-40 h-full"
+    </> */}
