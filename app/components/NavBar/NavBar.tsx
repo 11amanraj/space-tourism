@@ -2,6 +2,7 @@ import React from 'react'
 import NavElement from './NavElement'
 import { NavbarElement } from '@/app/interfaces/interfaces'
 import Link from 'next/link'
+import NavMenu from './NavMenu'
 
 const NavBar = () => {
   const NavigationElement : NavbarElement[] = [
@@ -40,7 +41,9 @@ const NavBar = () => {
         </div>
       </div>
       
-      <img src="/shared/icon-hamburger.svg" alt="hamburger" className='w-6 h-6 block md:hidden'/>
+      <div>
+        <NavMenu />
+      </div>
       <div className='hidden md:flex md:gap-12 md:pr-10 md:pl-21 bg-secondary/5 backdrop-blur-2xl'>
         {NavigationElement.map(item => 
           <NavElement title={item.title} index={item.index} link={item.link} key={item.index}/>
