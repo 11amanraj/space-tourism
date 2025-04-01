@@ -29,7 +29,7 @@ const NavBar = () => {
   ]
 
   return (
-    <nav className='flex justify-between items-center p-6 md:p-0 md:h-24 lg:mt-10'>
+    <nav className='flex justify-between items-center p-6 md:p-0 md:h-24 lg:pt-10'>
       <Link href={'/'}>
         <img src="/shared/logo.svg" alt="logo"  className='w-10 h-10 sm:w-12 sm:h-12 md:mx-10 lg:mx-16'/>
       </Link>
