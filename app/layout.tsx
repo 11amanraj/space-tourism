@@ -27,9 +27,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <div className={`${backgrounds[pathname]} bg-cover`}>
+        <div className={`${backgrounds[pathname]} bg-cover lg:pt-10`}>
           <NavBar/>
-          <div className={`outline-1 max-w-277 mx-auto p-6 pt-28 flex flex-col justify-center items-center h-[100dvh] gap-6 self-center md:pt-46`}>
+          <div className={`max-w-277 mx-auto p-6 pt-28 flex flex-col justify-center items-center h-[100dvh] gap-6 self-center md:pt-46`}>
               {children}
           </div>
         </div>
