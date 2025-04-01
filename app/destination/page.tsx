@@ -33,7 +33,7 @@ const page = () => {
     ]
   return (
     <>
-        <div className='text-preset-8 flex gap-6 justify-center sm:text-[20px] sm:justify-start md:text-[28px]'>
+        <div className='text-preset-8 flex gap-6 justify-center sm:text-[20px] sm:self-start md:text-[28px]'>
             <p className='opacity-25'>01</p>
             <p>PICK YOUR DESTINATION</p>
         </div>
@@ -55,12 +55,12 @@ const page = () => {
                 <div className='h-[1px] opacity-25 bg-secondary'></div>
                 <ul className='text-center flex flex-col gap-6 sm:flex-row sm:justify-between'>
                     <li>
-                        <p className='text-tertiary text-preset-7'>AVG. DISTANCE</p>
-                        <p className='text-preset-6'>{planetary_bodies[0].distance.toUpperCase()}</p>
+                        <p className='text-tertiary text-preset-7 text-start'>AVG. DISTANCE</p>
+                        <p className='text-preset-6 text-start'>{planetary_bodies[0].distance.toUpperCase()}</p>
                     </li>
                     <li>
-                        <p className='text-tertiary text-preset-7'>EST. TRAVEL TIME</p>
-                        <p className='text-preset-6'>{planetary_bodies[0].travel_time.toUpperCase()}</p>
+                        <p className='text-tertiary text-preset-7 text-start'>EST. TRAVEL TIME</p>
+                        <p className='text-preset-6 text-start'>{planetary_bodies[0].travel_time.toUpperCase()}</p>
                     </li>
                 </ul>
             </div>
