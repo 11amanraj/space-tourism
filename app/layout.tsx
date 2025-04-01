@@ -27,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <div className={`h-[100dvh] ${backgrounds[pathname]} bg-cover lg:pt-10`}>
+        <div className={`h-[100dvh] ${backgrounds[pathname]} bg-cover bg-center bg-no-repeat bg-fixed lg:pt-10`}>
           <NavBar/>
           <div className={`max-w-277 mx-auto p-6 flex flex-col justify-center items-center gap-6 self-center sm:pt-10 md:pt-12`}>
               {children}
