@@ -1,10 +1,11 @@
 'use client'
 
 import Link from 'next/link';
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 
 const NavMenu = () => {
     const [isOpen, setIsOpen] = useState<boolean>(false);
+    const drawerRef = useRef<HTMLDivElement | null>(null);
 
     useEffect(() => {
         if (isOpen) {
@@ -18,11 +19,29 @@ const NavMenu = () => {
         };
       }, [isOpen]);
 
+    useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+        if (drawerRef.current && !drawerRef.current.contains(event.target as Node)) {
+        setIsOpen(false);
+        }
+    };
+
+    if (isOpen) {
+        document.addEventListener('mousedown', handleClickOutside);
+    } else {
+        document.removeEventListener('mousedown', handleClickOutside);
+    }
+
+    return () => {
+        document.removeEventListener('mousedown', handleClickOutside);
+    };
+    }, [isOpen]);
+
   return (
     <>
         <img src="/shared/icon-hamburger.svg" alt="hamburger" className='w-6 h-6 block md:hidden' onClick={() => setIsOpen(prev => !prev)}/>
         {isOpen && 
-            <div className='bg-[#0b0d17]/15 backdrop-blur-[40px] h-full w-64 absolute right-0 top-0 pt-8 flex flex-col gap-20'>
+            <div ref={drawerRef} className='bg-[#0b0d17]/15 backdrop-blur-[40px] h-full w-64 absolute right-0 top-0 pt-8 flex flex-col gap-20'>
                 <img src='/shared/icon-close.svg' alt='close' className='w-5 h-5 self-end mr-6' onClick={() => setIsOpen(prev => !prev)}/>
                 <ul className='text-preset-8 px-8 flex flex-col gap-8'>
                     <Link href='/' onClick={() => setIsOpen(false)}><li className='flex gap-3'><p className='font-bold'>00</p><p>HOME</p></li></Link>
