@@ -2,6 +2,7 @@
 
 import React from 'react'
 import { useState } from 'react'
+import DestinationSwitcher from '../components/DestinationSwitcher';
 
 const page = () => {
     const [destination, setDestination] = useState<number>(1)
@@ -53,10 +54,14 @@ const page = () => {
             </div>
             <div className='flex flex-col gap-6 md:flex-1 md:px-12 md:self-center'>
                 <ul className='text-preset-7 self-center flex gap-8 sm:text-[16px] md:self-start'>
-                    <li onClick={() => setDestination(0)}>MOON</li>
-                    <li onClick={() => setDestination(1)}>MARS</li>
-                    <li onClick={() => setDestination(2)}>EUROPA</li>
-                    <li onClick={() => setDestination(3)}>TITAN</li>
+                    {planetary_bodies.map(body => 
+                        <DestinationSwitcher 
+                            key={body.id} 
+                            setDestination={() => setDestination(body.id)} 
+                            text={body.name.toUpperCase()} 
+                            isActive={destination === body.id}
+                        />
+                    )}
                 </ul>
                 <div className='flex flex-col gap-4'>
                     <h1 className='self-center text-preset-3 sm:text-[100px] md:self-start'>{planetary_bodies[destination].name}</h1>
