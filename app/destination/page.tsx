@@ -4,7 +4,7 @@ import React from 'react'
 import { useState } from 'react'
 import DestinationSwitcher from '../components/DestinationSwitcher';
 
-const page = () => {
+const Page = () => {
     const [destination, setDestination] = useState<number>(1)
 
     const planetary_bodies = [
@@ -22,7 +22,7 @@ const page = () => {
             distance: '225 MIL. KM',
             travel_time: '9 MONTHS',
             image: '/destination/image-mars.png',
-            id: 1 
+            id: 1
         },
         {
             name: 'EUROPA',
@@ -42,46 +42,46 @@ const page = () => {
         }
     ]
 
-  return (
-    <>
-        <div className='text-preset-8 flex gap-6 justify-center sm:text-[20px] sm:self-start md:text-[28px]'>
-            <p className='opacity-25'>01</p>
-            <p>PICK YOUR DESTINATION</p>
-        </div>
-        <div className='pt-6 h-full flex flex-col gap-8 self-center md:flex-row'>
-            <div className='w-52 aspect-[1/1] md:flex-1 self-center md:p-7'>
-                <img className='w-full' src={planetary_bodies[destination].image} alt={planetary_bodies[destination].name}/>
+    return (
+        <>
+            <div className='text-preset-8 flex gap-6 justify-center sm:text-[20px] sm:self-start md:text-[28px]'>
+                <p className='opacity-25'>01</p>
+                <p>PICK YOUR DESTINATION</p>
             </div>
-            <div className='flex flex-col gap-6 md:flex-1 md:px-12 md:self-center'>
-                <ul className='text-preset-7 self-center flex gap-8 sm:text-[16px] md:self-start'>
-                    {planetary_bodies.map(body => 
-                        <DestinationSwitcher 
-                            key={body.id} 
-                            setDestination={() => setDestination(body.id)} 
-                            text={body.name.toUpperCase()} 
-                            isActive={destination === body.id}
-                        />
-                    )}
-                </ul>
-                <div className='flex flex-col gap-4'>
-                    <h1 className='self-center text-preset-3 sm:text-[100px] md:self-start'>{planetary_bodies[destination].name}</h1>
-                    <p className='text-preset-9 text-[15px] text-center text-tertiary sm:text-[18px] md:text-start'>{planetary_bodies[destination].description}</p>
+            <div className='pt-6 h-full flex flex-col gap-8 self-center md:flex-row'>
+                <div className='w-52 aspect-[1/1] md:flex-1 self-center md:p-7'>
+                    <img className='w-full' src={planetary_bodies[destination].image} alt={planetary_bodies[destination].name} />
                 </div>
-                <div className='h-[1px] opacity-25 bg-secondary'></div>
-                <ul className='text-center flex flex-col gap-6 sm:flex-row sm:justify-between'>
-                    <li>
-                        <p className='text-tertiary text-preset-7 text-start'>AVG. DISTANCE</p>
-                        <p className='text-preset-6 text-start'>{planetary_bodies[destination].distance.toUpperCase()}</p>
-                    </li>
-                    <li>
-                        <p className='text-tertiary text-preset-7 text-end'>EST. TRAVEL TIME</p>
-                        <p className='text-preset-6 text-end'>{planetary_bodies[destination].travel_time.toUpperCase()}</p>
-                    </li>
-                </ul>
+                <div className='flex flex-col gap-6 md:flex-1 md:px-12 md:self-center'>
+                    <ul className='text-preset-7 self-center flex gap-8 sm:text-[16px] md:self-start'>
+                        {planetary_bodies.map(body =>
+                            <DestinationSwitcher
+                                key={body.id}
+                                setDestination={() => setDestination(body.id)}
+                                text={body.name.toUpperCase()}
+                                isActive={destination === body.id}
+                            />
+                        )}
+                    </ul>
+                    <div className='flex flex-col gap-4'>
+                        <h1 className='self-center text-preset-3 sm:text-[100px] md:self-start'>{planetary_bodies[destination].name}</h1>
+                        <p className='text-preset-9 text-[15px] text-center text-tertiary sm:text-[18px] md:text-start'>{planetary_bodies[destination].description}</p>
+                    </div>
+                    <div className='h-[1px] opacity-25 bg-secondary'></div>
+                    <ul className='text-center flex flex-col gap-6 sm:flex-row sm:justify-between'>
+                        <li>
+                            <p className='text-tertiary text-preset-7 text-start'>AVG. DISTANCE</p>
+                            <p className='text-preset-6 text-start'>{planetary_bodies[destination].distance.toUpperCase()}</p>
+                        </li>
+                        <li>
+                            <p className='text-tertiary text-preset-7 text-end'>EST. TRAVEL TIME</p>
+                            <p className='text-preset-6 text-end'>{planetary_bodies[destination].travel_time.toUpperCase()}</p>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </>
-  )
+        </>
+    )
 }
 
-export default page
+export default Page

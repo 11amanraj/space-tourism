@@ -3,7 +3,7 @@
 import React from 'react'
 import { useState } from 'react'
 
-const page = () => {
+const Page = () => {
     const technology = [
         {
             id: 0,
@@ -56,4 +56,4 @@ const page = () => {
     )
 }
 
-export default page
+export default Page
